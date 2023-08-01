@@ -1,0 +1,65 @@
+#
+#aka:
+#  springboot:
+#    redis:
+#      default:
+#        database: 1
+#        host:
+#        password:
+#        port: 6379
+#        timeout: 60000
+#        lettuce:
+#          cluster:
+#            refresh:
+#              period: 10s # 集群拓扑刷新周期
+#              adaptive: true #集群拓扑动态感应
+#          pool:
+#            max-active: -1
+#            max-idle: -1
+#            max-wait: -1
+#            min-idle: -1
+#        sentinel:
+#          password: xxx
+#          master: mymaster
+#          nodes:
+#            - 192.168.1.110:26379
+#            - 192.168.1.111:26379
+#            - 192.168.1.112:26379
+#        cluster:
+#          maxRedirects: 122
+#          nodes:
+#            - 192.168.1.8:9001
+#            - 192.168.1.8:9002
+#            - 192.168.1.8:9003
+#      one:
+#        database: 1
+#        host:
+#        port: 6379
+#        password:
+#        timeout: 60000
+#        lettuce:
+#          cluster:
+#            refresh:
+#              period: 10s # 集群拓扑刷新周期
+#              adaptive: true #集群拓扑动态感应
+#          pool:
+#            max-active: -1 #连接池最大连接数（使用负值表示没有限制
+#            max-idle: -1 #连接池中的最大空闲连接数
+#            max-wait: -1 #连接池最大阻塞等待时间，（使用负值表示没有限制），单位秒，默认10秒
+#            min-idle: -1 #连接池中的最小空闲连接数
+#            timeBetweenEvictionRuns: 60s # 单位秒，默认60秒，空闲连接回收间隔，为负时不创建空闲回收线程，为正时表示定时空闲连接回收间隔
+#        sentinel:
+#          password: xxx
+#          master: mymaster
+#          nodes:
+#            - 192.168.1.110:26379
+#            - 192.168.1.111:26379
+#            - 192.168.1.112:26379
+#        cluster:
+#          maxRedirects: 122
+#          nodes:
+#            - 192.168.1.8:9001
+#            - 192.168.1.8:9002
+#            - 192.168.1.8:9003
+#
+
